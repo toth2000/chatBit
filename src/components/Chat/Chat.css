@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.messages{
+    width: 90%;
+}
+
+.form{
+    margin: 1em 0;
+    margin: 1em 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 516px) {
+    .messages{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 954px) {
+    .messages{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .messages{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .messages{
+        width: 40%;
+    }
+}
