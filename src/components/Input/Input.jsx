@@ -1,4 +1,6 @@
 import React from 'react';
+// #11
+import './Message.css'
 
 const Input = ({message, setMessage, sendMessage})=>{
 
