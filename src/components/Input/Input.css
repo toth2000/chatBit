@@ -1,0 +1,46 @@
+input {
+    padding: .25em;
+    border: 2px solid rgb(41, 151, 253);
+    border-radius: .25em;
+    margin-right: .25em;
+    width: 100%;
+}
+
+input:active, input:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px rgb(0, 132, 255),
+                -1px -1px 3px rgb(0, 132, 255);
+}
+
+.sendButton{
+    padding: .5em;
+    color: aliceblue;
+    background: rgb(41, 151, 253);
+    border-radius: .25em;
+    border: none;
+    font-weight: 550;
+}
+
+@media screen and (min-width: 516px) {
+    input{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 954px) {
+    input{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    input{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    input{
+        width: 40%;
+    }
+}
