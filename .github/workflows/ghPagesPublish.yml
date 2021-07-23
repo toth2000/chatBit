@@ -5,15 +5,18 @@ name: GH pages publish
 
 on:
   push:
-    branches: [ master ]
+    branches: -master
   pull_request:
-    branches: [ master ]
+    branches: -master 
 
 jobs:
   deploy:
 
     runs-on: ubuntu-latest
-    
+    strategy:
+      matrix:
+        node_version: ['16']
+        
     steps:
       - name: Install Dependencies
         run: npm install
