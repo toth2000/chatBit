@@ -26,5 +26,7 @@ jobs:
         run: git config --global user.email "tothagata.bhattacharjee@gmail.com"
       - name: Confit Git UserName
         run: git config --global user.name "Tothagata Bhattacharjee"
+      - name: Adding Remote
+        run: git remote add origin https://github.com/toth2000/chatBit.git
       - name: Deploy
         run: npm run deploy
