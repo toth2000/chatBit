@@ -26,7 +26,10 @@ jobs:
         run: git config --global user.email "tothagata.bhattacharjee@gmail.com"
       - name: Confit Git UserName
         run: git config --global user.name "Tothagata Bhattacharjee"
-      - name: Adding Remote
-        run: git remote -v
-      - name: Deploy
-        run: npm run deploy
+      - name: build
+        run: npm build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
