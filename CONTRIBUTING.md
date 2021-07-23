@@ -9,5 +9,6 @@ We are happy to welcome all the contributions from anyone willing to improve thi
 - The `master` branch contains all client side ReactJs code.
 - The `server` branch contains all server-side NodeJs and ExpressJs code. This branch is deployed and connected to ``HEROKU``.
 - The code of `master` branch is deployed to the `gh-pages` branch.
+- If your code is breaking then create pull request to `development` branch.
 
 ### For any queries or discussions, please create a new discussion under the **Discussions** tab. 
