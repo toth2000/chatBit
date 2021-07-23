@@ -51,3 +51,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Simple build for production
 
     $ npm build
+
+## Contribution guidelines
+
+Please refer to our [Contribution Guide](https://github.com/toth2000/chatBit/blob/master/CONTRIBUTING.md) for contributing to this project. And remeber no contribution is small,  every contribution matters.
