@@ -1,7 +1,7 @@
 # ChatBit
 
 A realtime chatroom app.
-<br>[Visit Website](https://toth2000.github.io/chatBit)
+[Website](https://toth2000.github.io/chatBit)
 ---
 ## Requirements
 
