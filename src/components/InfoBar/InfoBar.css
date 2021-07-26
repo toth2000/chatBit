@@ -1,0 +1,11 @@
+.companyLogo {
+    width: 100%;
+    max-width: 55%;
+    height: auto;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    display: flex;
+    
+}
