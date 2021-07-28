@@ -9,6 +9,7 @@ A realtime chatroom app.
   - `master` branch contains all ReactJs client side code
   - `server` branch contains all NodeJs and ExpressJs server side code
   - `development` branch is used to test breaking Pull Requests
+  - `gh-pages` branch is used to deploy the react code of `master` branch using GitHub pages
 
 ## Requirements
 
