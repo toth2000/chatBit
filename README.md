@@ -51,6 +51,12 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Simple build for production
 
     $ npm build
+    
+## Branches
+  
+  - `master` branch contains all ReactJs client side code
+  - `server` branch contains all NodeJs and ExpressJs server side code
+  - `development` branch is used to test breaking Pull Requests
 
 ## Contribution guidelines
 
