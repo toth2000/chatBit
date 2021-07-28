@@ -1,0 +1,72 @@
+.html,body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0%;
+}
+
+.joinOuterContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: blueviolet;
+    width: 100%;
+}
+
+
+.joinInnerContainer{
+    width: 20%;
+    border-radius: 20px;
+    padding: 25px;
+    display: inline-block;
+    background-color: brown;
+}
+
+.joinInput{
+    border-radius: 7px;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.button{
+    background-color: rgb(45, 182, 182);
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.button:hover{
+    background-color: rgb(0, 139, 204);
+    color: aliceblue;
+}
+
+.heading{
+    color: antiquewhite;
+    padding: 15px;
+    border-bottom: 2px solid rgb(58, 212, 192);
+}
+
+@media (min-width: 200px) and (max-width: 450px) {
+
+    .joinInnerContainer{
+        width: 70%;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 640px) {
+
+    .joinInnerContainer{
+        width: 50%;
+    }
+}
+
+@media (min-width: 642px) and (max-width: 1024px) {
+
+    .joinInnerContainer{
+        width: 35%;
+    }
+}

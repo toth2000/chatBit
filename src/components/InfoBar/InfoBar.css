@@ -1,3 +1,4 @@
+
 .companyLogo {
     width: 100%;
     max-width: 55%;
@@ -9,3 +10,24 @@
     display: flex;
     
 }
+
+.infoBar{
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    border-radius: 4px 4px 0;
+
+}
+
+.leftInnerContainer{
+    display: flex;
+    flex: 0.5;
+}
+
+.rightInnerContainer{
+    display: flex;
+}   
+

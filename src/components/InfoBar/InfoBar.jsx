@@ -11,7 +11,7 @@ const InfoBar = ({room})=>{
         </div>
         
         <div className="rightInnerContainer">
-            <a href="/"><img src={""} alt="closeImg"/></a>
+            <a href="https://toth2000.github.io/chatBit/"><img src={""} alt="closeImg"/></a>
         </div>
     </div>
     );

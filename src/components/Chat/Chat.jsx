@@ -29,11 +29,6 @@ const Chat = ({location}) => {
         setRoom(room);
         console.log(`name: ${name} and room: ${room}`);
         socket.emit('join', {name, room}); //Sending data to backend
-        
-        return ()=>{  //It is call when unmounting component
-             socket.emit('disconnect');
-             socket.off(); //Turn the instance of client socket off
-        }
 
     }, [ENDPOINT, location.search]); //useEffect() will be called when value of array element changes
 
