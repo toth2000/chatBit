@@ -2,7 +2,14 @@
 
 A realtime chatroom app.
 [Website](https://toth2000.github.io/chatBit)
----
+----
+
+## Branches
+  
+  - `master` branch contains all ReactJs client side code
+  - `server` branch contains all NodeJs and ExpressJs server side code
+  - `development` branch is used to test breaking Pull Requests
+
 ## Requirements
 
 For development, you will only need Node.js and ReactJs installed in your environement.
@@ -51,12 +58,6 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Simple build for production
 
     $ npm build
-    
-## Branches
-  
-  - `master` branch contains all ReactJs client side code
-  - `server` branch contains all NodeJs and ExpressJs server side code
-  - `development` branch is used to test breaking Pull Requests
 
 ## Contribution guidelines
 
