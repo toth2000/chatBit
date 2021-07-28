@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/chatBit/static/css/main.b5e71e67.chunk.css",
-    "main.js": "/chatBit/static/js/main.bb60bbe7.chunk.js",
-    "main.js.map": "/chatBit/static/js/main.bb60bbe7.chunk.js.map",
+    "main.css": "/chatBit/static/css/main.580dba04.chunk.css",
+    "main.js": "/chatBit/static/js/main.cae9dba8.chunk.js",
+    "main.js.map": "/chatBit/static/js/main.cae9dba8.chunk.js.map",
     "runtime-main.js": "/chatBit/static/js/runtime-main.e3d3a2d6.js",
     "runtime-main.js.map": "/chatBit/static/js/runtime-main.e3d3a2d6.js.map",
     "static/js/2.82db2c33.chunk.js": "/chatBit/static/js/2.82db2c33.chunk.js",
     "static/js/2.82db2c33.chunk.js.map": "/chatBit/static/js/2.82db2c33.chunk.js.map",
     "index.html": "/chatBit/index.html",
-    "static/css/main.b5e71e67.chunk.css.map": "/chatBit/static/css/main.b5e71e67.chunk.css.map",
-    "static/js/2.82db2c33.chunk.js.LICENSE.txt": "/chatBit/static/js/2.82db2c33.chunk.js.LICENSE.txt"
+    "static/css/main.580dba04.chunk.css.map": "/chatBit/static/css/main.580dba04.chunk.css.map",
+    "static/js/2.82db2c33.chunk.js.LICENSE.txt": "/chatBit/static/js/2.82db2c33.chunk.js.LICENSE.txt",
+    "static/media/companyLogo.43bfb05d.png": "/chatBit/static/media/companyLogo.43bfb05d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e3d3a2d6.js",
     "static/js/2.82db2c33.chunk.js",
-    "static/css/main.b5e71e67.chunk.css",
-    "static/js/main.bb60bbe7.chunk.js"
+    "static/css/main.580dba04.chunk.css",
+    "static/js/main.cae9dba8.chunk.js"
   ]
 }
