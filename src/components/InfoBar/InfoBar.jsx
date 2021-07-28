@@ -1,11 +1,12 @@
 import React from 'react';
+import companyLogo from './companyLogo.png';
 import './InfoBar.css';
 
 const InfoBar = ({room})=>{
    return (
    <div className="infoBar">
         <div className="leftInnerContainer">
-            <img className="onlineIcon" src={""} alt="icon"/>
+            <img className="companyLogo" src={companyLogo} alt="chatbit-logo"/>
             <h3>{room}</h3>
         </div>
         
