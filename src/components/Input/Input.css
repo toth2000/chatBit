@@ -1,4 +1,4 @@
-input {
+.messageInput {
     padding: .25em;
     border: 2px solid rgb(41, 151, 253);
     border-radius: .25em;
@@ -6,7 +6,7 @@ input {
     width: 100%;
 }
 
-input:active, input:focus {
+.messageInput:active, input:focus {
     outline: none;
     box-shadow: 1px 1px 3px rgb(0, 132, 255),
                 -1px -1px 3px rgb(0, 132, 255);
@@ -22,25 +22,25 @@ input:active, input:focus {
 }
 
 @media screen and (min-width: 516px) {
-    input{
+    .messageInput{
         width: 80%;
     }
 }
 
 @media screen and (min-width: 954px) {
-    input{
+    .messageInput{
         width: 70%;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    input{
+    .messageInput{
         width: 50%;
     }
 }
 
 @media screen and (min-width: 1600px) {
-    input{
+    .messageInput{
         width: 40%;
     }
 }

@@ -1,14 +1,11 @@
-html,
-body {
-    background: #181a19;
+.messageContainer{
+    border:0;
     color: #fff;
     line-height: 1.1;
     font-size:11px;
     margin-bottom:10px;
 }
-.container{
-    border:0;
-}
+
 .form {
     background: red;
     display: block;
@@ -103,8 +100,3 @@ body {
     background: inherit;
 }
 
-/* needs testing _TBD_ unused classes */
-.messageBox {}
-.pl-10 {}
-.justifyEnd {border-bottom: 1px dotted #353535;
-}

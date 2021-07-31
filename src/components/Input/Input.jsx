@@ -7,7 +7,7 @@ const Input = ({message, setMessage, sendMessage})=>{
     return(
     
     <form className="form">
-        <input 
+        <input className="messageInput"
                 value={message} 
                 onChange={(event) => setMessage(event.target.value)}
                 onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null} />
