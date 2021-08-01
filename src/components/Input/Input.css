@@ -1,9 +1,13 @@
+.form{
+    display: flex;
+}
+
 .messageInput {
-    padding: .25em;
+    padding: 8px;
     border: 2px solid rgb(41, 151, 253);
     border-radius: .25em;
     margin-right: .25em;
-    width: 100%;
+    width: 80%;
 }
 
 .messageInput:active, input:focus {
@@ -13,6 +17,7 @@
 }
 
 .sendButton{
+    flex-grow: 1;
     padding: .5em;
     color: aliceblue;
     background: rgb(41, 151, 253);
@@ -21,26 +26,11 @@
     font-weight: 550;
 }
 
-@media screen and (min-width: 516px) {
-    .messageInput{
-        width: 80%;
-    }
+.sendButton:hover{
+    background-color: darkblue;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 954px) {
-    .messageInput{
-        width: 70%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .messageInput{
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .messageInput{
-        width: 40%;
-    }
+.sendButton:active{
+    background-color: blue;
 }

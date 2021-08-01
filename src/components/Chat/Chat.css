@@ -1,45 +1,26 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+.chatOuterContainer{
+    background-color: purple;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+    padding: 5%;
+    height: 100vh;
 }
 
-.messages{
-    width: 90%;
+.chatInfoBar{  
+    grid-column: 1/-1;
 }
 
-.form{
-    margin: 1em 0;
-    margin: 1em 0;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.chatMessageBox{
+    background-color: rgb(82, 82, 79);
+    height: 75vh;
+    display: grid;
 }
 
-@media screen and (min-width: 516px) {
-    .messages{
-        width: 80%;
-    }
+.chatRoomData{
+    background-color: bisque;
 }
 
-@media screen and (min-width: 954px) {
-    .messages{
-        width: 70%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .messages{
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .messages{
-        width: 40%;
-    }
+.chatInput{
+    align-self: end;
 }

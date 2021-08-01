@@ -1,102 +1,39 @@
-.messageContainer{
-    border:0;
-    color: #fff;
-    line-height: 1.1;
-    font-size:11px;
-    margin-bottom:10px;
-}
-
-.form {
-    background: red;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    box-shadow: 0 -2px 18px #131313;
-}
-.form input {
-    min-width: 100%;
-    padding: 10px;
-    height: 100%;
-    margin: 0;
-    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, .7);
-    background: #19191a;
-    color: #cecece;
-    border: 8px solid #484848;
-    border-radius: 0;
-}
-.form button {
-    background: #595959;
-    color: #959595;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 10px;
-    cursor: pointer;
-    padding: 9.5px 33px 9.5px;
-    border-radius: 34px;
-    position: absolute;
-    bottom: 2px;
-    right: 10px;
-    border: 8px solid #484848;
-    box-shadow: 0 0 1px #484848,20px 0 0 #484848,inset 0 0 1px #222;
-    transition: background .05s ease;
-}
-.form button:hover {
-    background: #6a6a6a;
-    color: #b3b3b3;
-    box-shadow: 0 0 1px #484848,20px 0 0 #484848,inset 0 0 0 1px #7b7b7b;
-}
-.messages {
-    background: inherit;
-    width: 100%;
-}
-
-/* entry message text */
-.messageText {
-    background: inherit;
-    padding: 0 20px;
-}
-/* entry message text bg */
-.backgroundLight {
-}
-
-/* holds username / messages */
 .messageContainer {
-    display: flex;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
 }
+
+.sentText{
+    color: darkgoldenrod;
+}
+
+.messageText{
+    color: white;
+}
+
+.colorBlack{
+    color: black;
+}
+
+.backgroundBlue{
+    background-color: blueviolet;
+}
+
+.backgroundLight{
+    background-color: bisque;
+}
+
 .justifyStart{
-    background:#151515;
-}
-/* others username */
-.justifyStart .sentText {
-    color:rgb(255, 255, 255);
+    justify-content: flex-start;
 }
 
-/* My messages */
-.colorWhite {
-    flex: 1;
-    color: #d0d0d0;
-}
-/* joining/leaving dialog */
-/* entry message text */
-.colorDark {
-    color: #a2a2a2;
-}
-/* other-user-holder // username-holder */
-.sentText {
-    background: inherit;
-    color: #c4c4c4;
-    height: auto;
-    padding: 0 10px 0 15px;
-}
-.sentText:after {
-    content: ':';
-}
-.backgroundBlue {
-    background: inherit;
+.justifyEnd{
+    justify-content: flex-end;
 }
 
+.messageBox{
+    padding: 8px;
+    border-radius: 8px;
+}

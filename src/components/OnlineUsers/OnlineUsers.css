@@ -1,0 +1,14 @@
+.onlineUsers{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.scrollOnlineUser{
+    margin-top: 25px;
+}
+
+.onlineUserList{
+    text-align: center;
+}

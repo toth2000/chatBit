@@ -2,6 +2,7 @@
 .companyLogo {
     width: 15%;
     margin-left: 25px;
+   
 }
 
 .infoBar{
@@ -14,5 +15,9 @@
 
 .closeBtn{
     margin-right: 25px;
+}
+
+.closeBtnImg{
+    height: 25px;
 }
 
