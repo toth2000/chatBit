@@ -29,7 +29,6 @@ io.on("connect", (socket)=>{ //To check when user is connected
            // return callback(error);
 
         console.log(user);
-        
         socket.emit('message', {user: 'BotAdmin', text:`${user.name}, welcome to the room ${user.room}`});
         socket.broadcast.to(user.room).emit('message', {user: 'BotAdmin', text: `${user.name} has joined the room.` });
         /**The broadcast method send message to everyone in the room other than the user that joined */
@@ -37,14 +36,14 @@ io.on("connect", (socket)=>{ //To check when user is connected
         socket.join(user.room); //It joins a user in a room, it is a built in method.
 
         io.to(user.room).emit('roomData', {room: user.room, users: getUsersInRoom(user.room)});
+        //It send broadcast to everyone
 
       //  callback(); //Doesn't return error
     });
-
+    
     socket.on('sendMessage',  (message, callback) => {
         const user = getUser(socket.id);
         console.log('Message in Server: ', message);
-       
         io.to(user.room).emit('message', {user: user.name, text: message}); //emit event to particular room  
         callback();
     });
@@ -56,13 +55,10 @@ io.on("connect", (socket)=>{ //To check when user is connected
         if(user)
         {   
             io.to(user.room).emit('message', {user: 'BotAdmin', text: `${user.name} has left`});
-            io.to(user.room).emit('roomData', {room: user.room, user: getUsersInRoom(user.room)});
+            io.to(user.room).emit('roomData', {room: user.room, users: getUsersInRoom(user.room)});
         }
     });
 
 });
 
 server.listen(PORT, ()=> console.log(`Listening to Port ${PORT}`));
-
-//Continue From https://www.youtube.com/watch?v=ZwFA3YMfkoc&t=4480s
-

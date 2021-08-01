@@ -1,7 +1,6 @@
 //This helps in managing USERs, it contains helper functions
 
 const users = [];
-
 const addUser = ( {id, name, room} )=>{
 
     name = name.trim().toLowerCase();
@@ -31,7 +30,6 @@ const getUser = (id)=>{
 }
 
 const getUsersInRoom = (room)=>{
-    return users.filter((user) => user.room === room);
-}
+   return users.filter((user) => user.room === room);
 
 module.exports = { addUser, removeUser, getUser, getUsersInRoom };
