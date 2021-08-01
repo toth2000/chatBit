@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chatBit/static/css/main.e48ddaf8.chunk.css",
+    "main.css": "/chatBit/static/css/main.18803126.chunk.css",
     "main.js": "/chatBit/static/js/main.70f0c48d.chunk.js",
     "main.js.map": "/chatBit/static/js/main.70f0c48d.chunk.js.map",
     "runtime-main.js": "/chatBit/static/js/runtime-main.e3d3a2d6.js",
@@ -8,7 +8,7 @@
     "static/js/2.d412a637.chunk.js": "/chatBit/static/js/2.d412a637.chunk.js",
     "static/js/2.d412a637.chunk.js.map": "/chatBit/static/js/2.d412a637.chunk.js.map",
     "index.html": "/chatBit/index.html",
-    "static/css/main.e48ddaf8.chunk.css.map": "/chatBit/static/css/main.e48ddaf8.chunk.css.map",
+    "static/css/main.18803126.chunk.css.map": "/chatBit/static/css/main.18803126.chunk.css.map",
     "static/js/2.d412a637.chunk.js.LICENSE.txt": "/chatBit/static/js/2.d412a637.chunk.js.LICENSE.txt",
     "static/media/companyLogo.43bfb05d.png": "/chatBit/static/media/companyLogo.43bfb05d.png",
     "static/media/groupChat.7bd34c1c.png": "/chatBit/static/media/groupChat.7bd34c1c.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.e3d3a2d6.js",
     "static/js/2.d412a637.chunk.js",
-    "static/css/main.e48ddaf8.chunk.css",
+    "static/css/main.18803126.chunk.css",
     "static/js/main.70f0c48d.chunk.js"
   ]
 }
