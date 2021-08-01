@@ -9,8 +9,13 @@
     color: darkgoldenrod;
 }
 
+.pr-10{
+    padding-right: 10px;
+}
+
 .messageText{
     color: white;
+    word-wrap: break-word;
 }
 
 .colorBlack{
@@ -36,4 +41,7 @@
 .messageBox{
     padding: 8px;
     border-radius: 8px;
+    max-width: 80%;
+    display: inline-block;
+    overflow: auto;
 }

@@ -13,7 +13,6 @@
 
 .chatMessageBox{
     background-color: rgb(82, 82, 79);
-    height: 75vh;
     display: grid;
 }
 
