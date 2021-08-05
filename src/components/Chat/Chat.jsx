@@ -18,8 +18,8 @@ const Chat = ({ location }) => {
   const [messages, setMessages] = useState([]);
   const [roomData, setRoomData] = useState({ room: "", users: [] });
 
-  const ENDPOINT = "https://toth2000-chat-bit.herokuapp.com/";
-  // const ENDPOINT = "http://localhost:5000/";
+   const ENDPOINT = "https://toth2000-chat-bit.herokuapp.com/";
+  //  const ENDPOINT = "http://localhost:5000/";  
   
   /**This hook handle new connection and disconnection*/
   useEffect(() => {
@@ -38,15 +38,16 @@ const Chat = ({ location }) => {
   /**This hook handle messages  */
   useEffect(() => {
     //With hooks we can have many useEffect
-    socket.on("message", (message) => {
-      setMessages([...messages, message]);
- 
-      socket.on("roomData", (x) => {
-        if (x) setRoomData(x);
-      });
-
+    socket.on('message', message => {
+      setMessages(messages => [ ...messages, message ]);
     });
-  }, []);
+    
+
+    socket.on("roomData", (x) => {
+      if (x) setRoomData(x);
+    });
+
+  }, []); //Calling Once at componentDidmount
 
   const sendMessage = (event) => {
     event.preventDefault();
