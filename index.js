@@ -25,8 +25,8 @@ io.on("connect", (socket)=>{ //To check when user is connected
         console.log('Index file started');
 
         const { error, user } = addUser({ id: socket.id, name, room });
-        //if(error)
-           // return callback(error);
+        if(error)
+            return callback(error);
 
         console.log(user);
         socket.emit('message', {user: 'BotAdmin', text:`${user.name}, welcome to the room ${user.room}`});
@@ -38,7 +38,7 @@ io.on("connect", (socket)=>{ //To check when user is connected
         io.to(user.room).emit('roomData', {room: user.room, users: getUsersInRoom(user.room)});
         //It send broadcast to everyone
 
-      //  callback(); //Doesn't return error
+        callback(); //Doesn't return error
     });
     
     socket.on('sendMessage',  (message, callback) => {
