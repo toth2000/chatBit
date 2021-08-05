@@ -20,17 +20,19 @@ const Chat = ({ location }) => {
 
   const ENDPOINT = "https://toth2000-chat-bit.herokuapp.com/";
   // const ENDPOINT = "http://localhost:5000/";
-
+  
   /**This hook handle new connection and disconnection*/
   useEffect(() => {
     //It is a reactHook, its equivalent is componentDidMount and componentDidUpdate
     const { name, room } = queryString.parse(location.search); //location.search returns URL from ? and parser parses the data
-
+    
     socket = io(ENDPOINT);
 
     setName(name);
     setRoom(room);
-    socket.emit("join", { name, room }); //Sending data to backend
+    socket.emit("join", { name, room }, (err) => {
+      if (err) alert("An Error Occured. Rejoin again");
+    }); //Sending data to backend
   }, [ENDPOINT, location.search]); //useEffect() will be called when value of array element changes
 
   /**This hook handle messages  */
@@ -38,14 +40,13 @@ const Chat = ({ location }) => {
     //With hooks we can have many useEffect
     socket.on("message", (message) => {
       setMessages([...messages, message]);
-    });
-  }, [messages]);
+ 
+      socket.on("roomData", (x) => {
+        if (x) setRoomData(x);
+      });
 
-  useEffect(() => {
-    socket.on("roomData", (x) => {
-      if (x) setRoomData(x);
     });
-  }, [roomData]);
+  }, []);
 
   const sendMessage = (event) => {
     event.preventDefault();
@@ -63,16 +64,16 @@ const Chat = ({ location }) => {
           <InfoBar room={room} />
         </div>
         <div className="chatRoomData">
-        <OnlineUsers roomData={roomData} />
+          <OnlineUsers roomData={roomData} />
         </div>
         <div className="chatMessageBox">
           <Messages messages={messages} name={name} />
           <div className="chatInput">
-          <Input
-            message={message}
-            setMessage={setMessage}
-            sendMessage={sendMessage}
-          />
+            <Input
+              message={message}
+              setMessage={setMessage}
+              sendMessage={sendMessage}
+            />
           </div>
         </div>
       </div>
