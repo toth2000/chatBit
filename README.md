@@ -1,7 +1,7 @@
 # ChatBit
 
 A realtime chatroom app.
-[Website](https://toth2000.github.io/chatBit)
+[Website](https://tothagata.me/chatBit/)
 ----
 
 ## Branches
