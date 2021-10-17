@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from 'react-router-dom';
 import queryString from "query-string"; //For retriving data from Url
 import io from "socket.io-client";
 
@@ -17,23 +18,32 @@ const Chat = ({ location }) => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [roomData, setRoomData] = useState({ room: "", users: [] });
+  const history = useHistory();
 
    const ENDPOINT = "https://toth2000-chat-bit.herokuapp.com/";
-  //  const ENDPOINT = "http://localhost:5000/";  
-  
+  //  const ENDPOINT = "http://localhost:5000/";
+
   /**This hook handle new connection and disconnection*/
   useEffect(() => {
     //It is a reactHook, its equivalent is componentDidMount and componentDidUpdate
     const { name, room } = queryString.parse(location.search); //location.search returns URL from ? and parser parses the data
-    
+
     socket = io(ENDPOINT);
 
     setName(name);
     setRoom(room);
     socket.emit("join", { name, room }, (err) => {
-      if (err) alert("An Error Occured. Rejoin again");
+      if (err) {
+        if (err === "Username already exist") {
+          alert("Name is already taken. Choose a different name and rejoin");
+          socket.disconnect();
+          history.replace("/");
+        } else {
+          alert("An Error Occured. Rejoin again");
+        }
+      }
     }); //Sending data to backend
-  }, [ENDPOINT, location.search]); //useEffect() will be called when value of array element changes
+  }, [ENDPOINT, location.search, history]); //useEffect() will be called when value of array element changes
 
   /**This hook handle messages  */
   useEffect(() => {
@@ -41,7 +51,7 @@ const Chat = ({ location }) => {
     socket.on('message', message => {
       setMessages(messages => [ ...messages, message ]);
     });
-    
+
 
     socket.on("roomData", (x) => {
       if (x) setRoomData(x);
